@@ -13,13 +13,13 @@ print("\nBot Started\n")
 
 @app.on_message(filters.command(['start']))
 async def start(_, message):
-    await message.reply_text("Hello I'm 1337x Torrent Scraper Bot\nSend /help To Show Help Screen\nBot by @unkusr")
+    await message.reply_text("Hello /help")
 
 
 
 @app.on_message(filters.command(['help']))
 async def help(_, message):
-    await message.reply_text("Example: /find titanic")
+    await message.reply_text("Ex.: /find titanic")
 
 m = None
 i = 0
@@ -51,18 +51,18 @@ async def find(_, message):
         await m.edit("Found Nothing.")
         return
     result = (
-        f"**Page - {i+1}**\n\n"
-        f"➲Name: `{a[i]['Name']}`\n"
-        f"➲By {a[i]['UploadedBy']} "
+        f"**📚Page - {i+1}**\n\n"
+        f"✔️Name: `{a[i]['Name']}`\n"
+        f"✔️By {a[i]['UploadedBy']} "
         f"{a[i]['DateUploaded']}\n" 
-        f"➲{a[i]['Type']} "
+        f"✔️{a[i]['Type']} "
         f"{a[i]['Category']}\n"
-        f"➲Poster: {a[i]['Poster']}\n"
-        f"➲Language: {a[i]['Language']} || "
-        f"➲Checked: {a[i]['LastChecked']}\n"
-        f"➲Seeds: {a[i]['Seeders']} & "
-        f"➲Leeches: {a[i]['Leechers']}\n"
-        f"➲Magnet: `{a[i]['Magnet']}`\n\n\n"
+        f"✔️Poster: {a[i]['Poster']}\n"
+        f"✔️Language: {a[i]['Language']} || "
+        f"✔️Checked: {a[i]['LastChecked']}\n"
+        f"✔️Seeds: {a[i]['Seeders']} & "
+        f"✔️Leeches: {a[i]['Leechers']}\n"
+        f"✔️Magnet: `{a[i]['Magnet']}`\n\n\n"
     )
     await m.edit(
         result,
@@ -88,18 +88,18 @@ async def callback_query_next(_, message):
     global query
     i += 1
     result = (
-        f"**Page - {i+1}**\n\n"
-        f"➲Name: `{a[i]['Name']}`\n"
-        f"➲By {a[i]['UploadedBy']} "
+        f"**📚Page - {i+1}**\n\n"
+        f"✔️Name: `{a[i]['Name']}`\n"
+        f"✔️By {a[i]['UploadedBy']} "
         f"{a[i]['DateUploaded']}\n" 
-        f"➲{a[i]['Type']} "
+        f"✔️{a[i]['Type']} "
         f"{a[i]['Category']}\n"
-        f"➲Poster: {a[i]['Poster']}\n"
-        f"➲Language: {a[i]['Language']} || "
-        f"➲Checked: {a[i]['LastChecked']}\n"
-        f"➲Seeds: {a[i]['Seeders']} & "
-        f"➲Leeches: {a[i]['Leechers']}\n"
-        f"➲Magnet: `{a[i]['Magnet']}`\n\n\n"
+        f"✔️Poster: {a[i]['Poster']}\n"
+        f"✔️Language: {a[i]['Language']} || "
+        f"✔️Checked: {a[i]['LastChecked']}\n"
+        f"✔️Seeds: {a[i]['Seeders']} & "
+        f"✔️Leeches: {a[i]['Leechers']}\n"
+        f"✔️Magnet: `{a[i]['Magnet']}`\n\n\n"
     )
     await m.edit(
         result,
@@ -128,18 +128,18 @@ async def callback_query_previous(_, message):
     global query
     i -= 1
     result = (
-        f"**Page - {i+1}**\n\n"
-        f"➲Name: `{a[i]['Name']}`\n"
-        f"➲By {a[i]['UploadedBy']} "
+        f"**📚Page - {i+1}**\n\n"
+        f"✔️Name: `{a[i]['Name']}`\n"
+        f"✔️By {a[i]['UploadedBy']} "
         f"{a[i]['DateUploaded']}\n" 
-        f"➲{a[i]['Type']} "
+        f"✔️{a[i]['Type']} "
         f"{a[i]['Category']}\n"
-        f"➲Poster: {a[i]['Poster']}\n"
-        f"➲Language: {a[i]['Language']} || "
-        f"➲Checked: {a[i]['LastChecked']}\n"
-        f"➲Seeds: {a[i]['Seeders']} & "
-        f"➲Leeches: {a[i]['Leechers']}\n"
-        f"➲Magnet: `{a[i]['Magnet']}`\n\n\n"
+        f"✔️Poster: {a[i]['Poster']}\n"
+        f"✔️Language: {a[i]['Language']} || "
+        f"✔️Checked: {a[i]['LastChecked']}\n"
+        f"✔️Seeds: {a[i]['Seeders']} & "
+        f"✔️Leeches: {a[i]['Leechers']}\n"
+        f"✔️Magnet: `{a[i]['Magnet']}`\n\n\n"
     )
     await m.edit(
         result,
