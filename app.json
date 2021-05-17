@@ -8,7 +8,7 @@
       "torrent",
       "python"
     ],
-    "repository": "https://github.com/devillD/Torrent-Searcher.git",
+    "repository": "https://github.com/kamileecher/Torrent-Searcher.git",
     "website": "https://t.me/trntsrcbot",
     "success_url": "https://t.me/trntsrcbot",
     "stack": "container",
